@@ -1,0 +1,215 @@
+.thing-form {
+    margin: 20px 0;
+}
+
+#banner {
+    border-bottom: none;
+    margin-top: -20px;
+}
+
+#banner h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.hero-unit {
+    position: relative;
+    padding: 30px 15px;
+    color: #F5F5F5;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    background: #4393B9;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #E5E5E5;
+}
+
+.priest {
+    
+}
+
+.priest1 {
+    background-image: url('../assets/images/priests/fr arceneaux.png') !important;
+}
+.priest2 {
+    background-image: url('../assets/images/priests/fr bordelon.png') !important;
+}
+.priest3 {
+    background-image: url('../assets/images/priests/fr brady.png') !important;
+}
+.priest4 {
+    background-image: url('../assets/images/priests/fr broussard.png') !important;
+}
+.priest5 {
+    background-image: url('../assets/images/priests/fr brown.png') !important;
+}
+.priest6 {
+    background-image: url('../assets/images/priests/fr halphen.jpg') !important;
+}
+.priest7 {
+    background-image: url('../assets/images/priests/fr mcintyre.png') !important;
+}
+.priest8 {
+    background-image: url('../assets/images/priests/fr melancon.png') !important;
+}
+.priest9 {
+    background-image: url('../assets/images/priests/fr metrejean.png') !important;
+}
+.priest10 {
+    background-image: url('../assets/images/priests/fr petit.png') !important;
+}
+.priest11 {
+    background-image: url('../assets/images/priests/fr sibley.png') !important;
+}
+.priest12 {
+    background-image: url('../assets/images/priests/sems.png') !important;
+}
+
+// div.ui.card {
+//     .image {
+//         height: 250px;
+//     }
+// }
+
+.three.cards .ui.card {
+    .image {
+        height: 248px;
+        width: 248px;
+        margin: 0 auto;
+        background-size: 248px 248px;
+    }
+}
+
+.four.cards .ui.card {
+    .image {
+        height: 184px;
+        width: 184px;
+        margin: 0 auto;
+        background-size: 184px 184px;
+    }
+}
+
+.five.cards .ui.card {
+    .image {
+        height: 143px;
+        width: 143px;
+        margin: 0 auto;
+        background-size: 143px 143px;
+    }
+}
+
+.card .content {
+    padding-bottom: 7px;
+}
+
+.ui.ribbon.label{
+    position: absolute;
+    z-index:3000;
+}
+
+.four.cards .ui.floating.label{
+    font-size: 1.2em;
+}
+
+.four.cards .ui.ribbon.label {
+    font-size: 0.8em;
+    left: -1rem;
+}
+
+.five.cards .ui.floating.label{
+    font-size: 1em;
+}
+
+.five.cards .ui.ribbon.label {
+    font-size: 0.7em;
+    left: -.85rem;
+}
+
+.cards.vote .ui.card>.image>img, .ui.cards>.card>.image>img {
+    height: 100%;
+}
+
+.ui.floating.label {
+    position: absolute;
+    z-index: 100;
+    bottom: -1em;
+    right: -.5em;
+    left: inherit;
+    font-size: 1.6em;
+    top: inherit;
+    margin: 0 !important;
+}
+.ui.card>:first-child, .ui.cards>.card>:first-child {
+border-radius: .2857rem .2857rem !important;
+}
+.ui.ribbon.label {
+    left: -1.2rem;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+.ui.card {
+    width: 150px;
+    background-color: #fdfdfd;
+    .image {
+        background-repeat: no-repeat !important;
+        // background-size: cover !important;
+        background-position: center top !important;
+    }
+}
+
+.ui.card>.content, .ui.cards>.card>.content {
+    text-align: center;
+}
+
+div.ui.statistic {
+    width: 100%;
+    max-width: 100%;
+}
+
+.timer {
+    text-align: center;
+    h2 {
+        font-size: 2em;
+    }
+}
+
+.ui.statistic>.value, .ui.statistics .statistic>.value {
+    font-size: 3rem;
+}
+
+/************/
+// ANIMATIONS //
+/*************/
+
+.animate-repeat {
+  line-height:40px;
+  list-style:none;
+  box-sizing:border-box;
+}
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:40px;
+}

@@ -1,0 +1,17 @@
+<div class="container score">
+  <div class="ui four cards vote">
+    <div class="ui card" ng-repeat="priest in priests | orderBy:'name'">
+      <div class="image">
+        <img ng-src="assets/images/priests/{{priest.image}}">
+        <div class="ui top left attached label">{{priest.vote}}</div>
+        
+        <div class="ui top right attached label">{{priest.name}}</div>
+      </div>
+      <div class="ui action left icon fluid input">
+        <i class="left plus icon"></i>   
+        <input type="number" ng-model="priest.add" placeholder="Enter vote number..." ng-keypress="change(priest, $event)">
+        <div class="ui teal right button" ng-click="add(priest)">Add</div>
+      </div>
+    </div> 
+  </div>
+</div>

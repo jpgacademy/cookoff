@@ -1,0 +1,37 @@
+$fa-font-path: "/bower_components/font-awesome/fonts";
+
+@import 'font-awesome/scss/font-awesome';
+@import 'semantic-ui/scss/semantic';
+/**
+ * App-wide Styles
+ */
+
+body {
+    margin: 0.2em 0;
+    background: #fff;
+    color: #000;
+    padding: 0.2em 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    right: 0;
+    max-width: 1140px;
+}
+
+.banner {
+	img {
+		width: 15%;
+	}
+	text-align: center;
+}
+
+// Component styles are injected through grunt
+// injector
+@import 'account/login/login.scss';
+@import 'admin/admin.scss';
+@import 'main/main.scss';
+@import 'score/score.scss';
+// endinjector

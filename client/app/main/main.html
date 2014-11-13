@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="ui three cards">
+    <div class="ui card" ng-repeat="priest in topThree() | orderBy: vote">
+      <div class="ui ribbon label">{{priest.name}}</div>
+      <div class="ui floating blue label">
+        {{priest.vote}}
+      </div>
+      <div class="image priest">
+        <img ng-src="assets/images/priests/{{priest.image}}">
+      </div>
+    </div>
+  </div>
+  <div class="ui four cards">
+    <div class="ui card" ng-repeat="priest in nextFour() | orderBy: vote">
+      <div class="ui ribbon label">{{priest.name}}</div>
+      <div class="ui floating blue label">
+        {{priest.vote}}
+      </div>
+      <div class="image priest">
+        <img ng-src="assets/images/priests/{{priest.image}}">
+      </div>
+      <!-- <div class="image priest priest{{priest.picId}}">
+      </div>
+      <div class="content">
+        <a class="header">{{priest.name}}</a>
+      </div>
+      <div class="description">
+        <div class="ui statistic">
+          <div class="value">
+            {{priest.vote}}
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  <div class="ui five cards">
+    <div class="ui card" ng-repeat="priest in lastFive() | orderBy: vote">
+      <div class="ui ribbon label">{{priest.name}}</div>
+      <div class="ui floating blue label">
+        {{priest.vote}}
+      </div>
+      <div class="image priest">
+        <img ng-src="assets/images/priests/{{priest.image}}">
+      </div>
+      <!-- <div class="image priest priest{{priest.picId}}">
+      </div>
+      <div class="content">
+        <a class="header">{{priest.name}}</a>
+      </div>
+      <div class="description">
+        <div class="ui statistic">
+          <div class="value">
+            {{priest.vote}}
+          </div>
+        </div>        
+      </div> -->
+    </div>
+  </div>
+
+  <div class="timer" ng-show="timer">
+    <h2>Voting Ends in <timer end-time="1416103200000">{{days}} days, {{hours}} hour{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} second{{secondsS}}.</timer></h2>
+  </div>
+</div>
